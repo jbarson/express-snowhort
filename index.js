@@ -14,6 +14,5 @@ app.use((_req, res,next) => {
 app.use(express.static('public'))
 
 app.use('/api', rootRoutes)
-app.use('/api/s', rootROutes2)
 
 app.listen(8080, error => error? console.error(error) : console.info('running on 8080'))
